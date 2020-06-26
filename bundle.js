@@ -5,7 +5,7 @@ const container = document.getElementById('viewer');
 
 const viewer = new PhotoSphereViewer({
   container,
-  panorama: './img/1-andar.jpg',
+  panorama: './img/3-andar.jpg',
   navbar: [
     'autorotate',
     'zoom',
