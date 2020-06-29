@@ -15,7 +15,7 @@
           width: 100vw;
           height: 77vh;
         }
-        #gallery {
+        .gallery {
           width: 100vw;
           background: #0f0f0f;
           position: relative;
@@ -24,8 +24,9 @@
           white-space:nowrap;
           box-sizing: border-box;
           padding: 5px;
+          display: none;
         }
-        #gallery .item {
+        .gallery .item {
           margin-right: 1px;
           height: 120px !important;
           width: 120px !important;
@@ -53,23 +54,55 @@
           height: inherit;
           max-width: 500px;
         }
+
+        .active-gallery {
+          display: block !important;
+        }
+
+        .view-btn {
+          margin-top: 5px;
+          min-width: 80px;
+          height: 30px;
+          margin-right: 20px;
+          border: 1px #ccc solid;
+          border-radius: 2px;
+          padding: 5px;
+          box-sizing: border-box;
+          text-align: center;
+        }
       </style>
   </head>
   <body>
     <div id="viewer"></div>
-    <div id="gallery">
+    <div id="right-view" class="gallery active-gallery">
       <div class="alignment">
-        <button class="item active" data-andar="3-andar" style='background-image: url(./img/thumbnails/3-andar.png)'>
-          <div class="title" data-andar="3-andar">3º andar</div>
+        <button class="item active" data-andar="5-andar-dir" style='background-image: url(./img/thumbnails/5-andar-dir.jpg)'>
+          <div class="title" data-andar="5-andar-dir">5º andar</div>
         </button>
-        <button class="item" data-andar="12-andar" style='background-image: url(./img/thumbnails/12-andar.png)'>
-          <div class="title" data-andar="12-andar">12º andar</div>
+        <button class="item" data-andar="10-andar-dir" style='background-image: url(./img/thumbnails/10-andar-dir.jpg)'>
+          <div class="title" data-andar="10-andar-dir">10º andar</div>
         </button>
-        <button class="item" data-andar="18-andar" style='background-image: url(./img/thumbnails/18-andar.png)'>
-          <div class="title" data-andar="18-andar">18º andar</div>
+        <button class="item" data-andar="15-andar-dir" style='background-image: url(./img/thumbnails/15-andar-dir.jpg)'>
+          <div class="title" data-andar="15-andar-dir">15º andar</div>
         </button>
-        <button class="item" data-andar="27-andar" style='background-image: url(./img/thumbnails/27-andar.png)'>
-          <div class="title" data-andar="27-andar">27º andar</div>
+        <button class="item" data-andar="20-andar-dir" style='background-image: url(./img/thumbnails/20-andar-dir.jpg)'>
+          <div class="title" data-andar="20-andar-dir">20º andar</div>
+        </button>
+      </div>
+    </div>
+    <div id="left-view" class="gallery">
+      <div class="alignment">
+        <button class="item active" data-andar="5-andar-esq" style='background-image: url(./img/thumbnails/5-andar-esq.jpg)'>
+          <div class="title" data-andar="5-andar-esq">5º andar</div>
+        </button>
+        <button class="item" data-andar="10-andar-esq" style='background-image: url(./img/thumbnails/10-andar-esq.jpg)'>
+          <div class="title" data-andar="10-andar-esq">10º andar</div>
+        </button>
+        <button class="item" data-andar="15-andar-esq" style='background-image: url(./img/thumbnails/15-andar-esq.jpg)'>
+          <div class="title" data-andar="15-andar-esq">15º andar</div>
+        </button>
+        <button class="item" data-andar="20-andar-esq" style='background-image: url(./img/thumbnails/20-andar-esq.jpg)'>
+          <div class="title" data-andar="20-andar-esq">20º andar</div>
         </button>
       </div>
     </div>
