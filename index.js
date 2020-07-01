@@ -16,6 +16,7 @@ const viewer = new PhotoSphereViewer({
       onClick: () => {
         $('#left-view').removeClass('active-gallery')
         $('#right-view').addClass('active-gallery')
+        $('#first-right').click()
       }
     },
     {
@@ -26,6 +27,7 @@ const viewer = new PhotoSphereViewer({
       onClick: () => {
         $('#right-view').removeClass('active-gallery')
         $('#left-view').addClass('active-gallery')
+        $('#first-left').click()
       }
     }
   ],
