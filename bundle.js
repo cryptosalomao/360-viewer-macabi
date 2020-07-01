@@ -11,8 +11,8 @@ const viewer = new PhotoSphereViewer({
     'zoom',
     {
       id: 'left-view',
-      title: 'Esquerda',
-      content: 'Esquerda',
+      title: 'Grand Mond',
+      content: 'Grand Mond',
       className: 'view-btn left-view-btn active-btn',
       onClick: () => {
         $('#right-view').removeClass('active-gallery')
@@ -24,8 +24,8 @@ const viewer = new PhotoSphereViewer({
     },
     {
       id: 'right-view',
-      title: 'Direita',
-      content: 'Direita',
+      title: 'Green Mond',
+      content: 'Green Mond',
       className: 'view-btn right-view-btn',
       onClick: () => {
         $('#left-view').removeClass('active-gallery')
