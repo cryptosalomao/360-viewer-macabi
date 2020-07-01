@@ -10,25 +10,29 @@ const viewer = new PhotoSphereViewer({
     'autorotate',
     'zoom',
     {
-      id: 'right-view',
-      title: 'Direita',
-      content: 'Direita',
-      className: 'view-btn',
-      onClick: () => {
-        $('#left-view').removeClass('active-gallery')
-        $('#right-view').addClass('active-gallery')
-        $('#first-right').click()
-      }
-    },
-    {
       id: 'left-view',
       title: 'Esquerda',
       content: 'Esquerda',
-      className: 'view-btn',
+      className: 'view-btn left-view-btn active-btn',
       onClick: () => {
         $('#right-view').removeClass('active-gallery')
         $('#left-view').addClass('active-gallery')
         $('#first-left').click()
+        $('.left-view-btn').addClass('active-btn')
+        $('.right-view-btn').removeClass('active-btn')
+      }
+    },
+    {
+      id: 'right-view',
+      title: 'Direita',
+      content: 'Direita',
+      className: 'view-btn right-view-btn',
+      onClick: () => {
+        $('#left-view').removeClass('active-gallery')
+        $('#right-view').addClass('active-gallery')
+        $('#first-right').click()
+        $('.left-view-btn').removeClass('active-btn')
+        $('.right-view-btn').addClass('active-btn')
       }
     }
   ],
