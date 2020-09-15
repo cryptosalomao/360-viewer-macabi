@@ -5,14 +5,14 @@ const container = document.getElementById('viewer');
 
 const viewer = new PhotoSphereViewer({
   container,
-  panorama: './img/5-andar-esq.jpg',
+  panorama: './img/2-andar-fundo.jpg',
   navbar: [
     'autorotate',
     'zoom',
     {
       id: 'left-view',
-      title: 'Grand Mond',
-      content: 'Grand Mond',
+      title: 'Fundo',
+      content: 'Fundo',
       className: 'view-btn left-view-btn active-btn',
       onClick: () => {
         $('#right-view').removeClass('active-gallery')
@@ -24,8 +24,8 @@ const viewer = new PhotoSphereViewer({
     },
     {
       id: 'right-view',
-      title: 'Green Mond',
-      content: 'Green Mond',
+      title: 'Frente',
+      content: 'Frente',
       className: 'view-btn right-view-btn',
       onClick: () => {
         $('#left-view').removeClass('active-gallery')
